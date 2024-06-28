@@ -1,0 +1,23 @@
+ #name {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20%;
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: colorChange 6s ease infinite;
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
