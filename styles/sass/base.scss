@@ -43,6 +43,46 @@ $green: #09f755;
 $grey: #797575;
 $white: #ffffff;
 $black: #000000;
+$purple: #682ae9;
+
+// styles/variables.scss
+
+$gradient-background: linear-gradient(
+    270deg,
+    red,
+    #682ae9,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+);
+$background-size: 400% 400%;
+$animation-name: colorChange;
+$animation-duration: 6s;
+$animation-timing-function: ease;
+$animation-iteration-count: infinite;
+
+@mixin gradient-text {
+    background: $gradient-background;
+    background-size: $background-size;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: $animation-name $animation-duration $animation-timing-function
+        $animation-iteration-count;
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 * {
     scroll-behavior: smooth;

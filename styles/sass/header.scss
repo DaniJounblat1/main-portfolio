@@ -1,56 +1,31 @@
 #name {
     font-size: 5rem;
     font-weight: bold;
-    margin-top: 10%;
-    background: linear-gradient(
-        270deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet
-    );
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: colorChange 6s ease infinite;
-}
-
-@keyframes colorChange {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    margin-top: 1rem;
+    @include gradient-text;
 }
 .header_page {
-    margin-top: 15vh;
+    margin-top: 20vh;
     .heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
+        letter-spacing: 2px;
     }
     .developer {
-        color: $green;
-        margin-top: 1rem;
+        color: $purple;
         font-size: 2rem;
         font-weight: bold;
     }
 
     .about-text {
         color: $grey;
-        margin-top: 1rem;
+        margin-top: 1.2rem;
         font-size: 1.5rem;
         font-weight: bold;
     }
 
     .hire-me-button {
-        background-color: $green;
+        background-color: $purple;
         border: none;
         color: black;
         padding: 10px 30px;
@@ -61,7 +36,7 @@
         font-size: 10px;
         font-weight: bold;
         transition: background-color 0.3s;
-        margin-top: 1rem;
+        margin-top: 1.2rem;
     }
 
     .hire-me-button:hover {
@@ -118,8 +93,9 @@
             z-index: 1;
             display: flex;
             .box {
-                background-color: $green;
+                background-color: $purple;
                 width: calc(100vw / 4);
+
                 height: 0vh;
             }
         }

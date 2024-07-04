@@ -55,7 +55,7 @@ const Header = () => {
             <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧 </h6>
             <Link href="#contact" passHref legacyBehavior>
                 <a>
-                    <button className="hire-me-button">Hire Me</button>
+                    <button className="hire-me-button">HIRE ME</button>
                 </a>
             </Link>
 
