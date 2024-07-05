@@ -49,7 +49,7 @@ const Header = () => {
         <section className="header_page">
             <h5 className="heading">HI THERE👋, I’M</h5>
             <div className="text-con">
-                <div id="name">Dani Jounblat</div>
+                <div className="name">Dani Jounblat</div>
             </div>
             <h3 className="developer"> WEB DEVELOPER + Designer 🧑‍💻</h3>
             <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧 </h6>
@@ -74,7 +74,7 @@ const Header = () => {
                     </div>
                     <img
                         className="mobile-logo"
-                        src="/img/svg/adeola-logo-mobile.svg"
+                        src="/img/name.png"
                         alt="adeola logo mobile"
                     />
                     <div className="nav-main__content">

@@ -107,39 +107,9 @@ const About = () => {
                     French <span>Elementary</span>
                 </p>
             </div>
-            <div className="toolsContainer">
-                <p className="pTitle">Tools:</p>
-                <div className="column">
-                    <p>
-                        <FontAwesomeIcon
-                            icon={faCode}
-                            className="fa-download"
-                        />{" "}
-                        VS Code
-                    </p>
-                    <p>
-                        <FontAwesomeIcon
-                            icon={faTerminal}
-                            className="fa-download"
-                        />{" "}
-                        Termux
-                    </p>
-                    <p>
-                        <FontAwesomeIcon
-                            icon={faAndroid}
-                            className="fa-download"
-                        />{" "}
-                        Acode
-                    </p>
-                    <p>
-                        <FontAwesomeIcon
-                            icon={faGithub}
-                            className="fa-download"
-                        />{" "}
-                        GitHub
-                    </p>
-                </div>
-            </div>
+          
+               
+           
         </div>
     );
 };
