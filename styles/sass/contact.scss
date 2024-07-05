@@ -3,15 +3,18 @@
         font-size: 2em;
         margin-bottom: 20px;
     }
+
     input,
     textarea {
         @include gradient-text;
     }
+
     .label {
         color: white;
         font-size: 1.6rem !important;
         font-weight: bold;
     }
+
     .form-group {
         margin-bottom: 15px;
 
@@ -23,9 +26,9 @@
 
         input,
         textarea {
-            width: 100%;
+            width: 81vw;
             padding: 10px;
-            font-size: 2rem;
+            font-size: 2.5rem;
             border: 1px solid $purple;
             border-radius: 5px;
             &:hover {
@@ -42,14 +45,40 @@
         padding: 10px 20px;
         font-size: 1.7rem;
         background-color: $purple;
-        color: #fff;
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: background-color 0.3s;
+        color: black;
+        font-weight: bold;
 
         &:hover {
-            background-color: $purple;
+            background-color: lighten($purple, 10%);
+        }
+    }
+
+    .status-message {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+
+        .status-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+
+            p {
+                font-size: 1.2rem;
+                color: green; // Change color based on your preference
+            }
         }
     }
 }

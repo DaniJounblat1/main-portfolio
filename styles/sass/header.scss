@@ -1,12 +1,21 @@
 .header_page {
     margin-top: 30vh;
-.name {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    @include gradient-text;
-}
-
+    .name {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        @include gradient-text;
+    }
+    .logo,
+    .mobile-logo {
+        position: absolute;
+        left: 4rem;
+        top: 5.4rem;
+        width: 6rem;
+    }
+    .mobile-logo {
+        top: 6rem !important;
+    }
     .heading {
         font-size: 1.5rem;
         font-weight: bold;
@@ -14,7 +23,7 @@
     }
     .developer {
         color: $purple;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: bold;
     }
 
@@ -102,7 +111,7 @@
         }
         .mobile-logo {
             position: absolute;
-            top: 4rem;
+            top: 5.4rem;
             left: 4rem;
             z-index: 2;
             filter: brightness(1%);

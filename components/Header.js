@@ -51,7 +51,7 @@ const Header = () => {
             <div className="text-con">
                 <div className="name">Dani Jounblat</div>
             </div>
-            <h3 className="developer"> WEB DEVELOPER + Designer 🧑‍💻</h3>
+            <h3 className="developer"> WEB DEVELOPER + DESIGNER 🧑‍💻</h3>
             <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧 </h6>
             <Link href="#contact" passHref legacyBehavior>
                 <a>
@@ -146,12 +146,10 @@ const Header = () => {
                     <picture>
                         <source
                             media="(max-width:37.5em)"
-                            srcSet="/img/svg/adeola-logo-mobile.svg"
+                            srcSet="/img/name.png"
                         />
-                        <img
-                            src="/img/svg/adeola-logo-desktop.svg"
-                            alt="adeola logo"
-                        />
+                        <img src="/img/name.png" alt="my logo"
+                        className="logo" />
                     </picture>
                 </nav>
             </div>
