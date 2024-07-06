@@ -20,7 +20,7 @@ import {
 
 const About = () => {
     return (
-        <div className="about-page">
+        <div className="about-page" id="about">
             <h1 className="mainTitle">ABOUT ME</h1>
 
             <a href="./Danijounblat.pdf" download className="cv">

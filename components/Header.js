@@ -82,20 +82,20 @@ const Header = () => {
                             <h4 className="heading-4">on the web</h4>
                             <div className="social-links">
                                 <div className="social-links--box">
-                                    <a href="https://github.com/adeolaadeoti">
+                                    <a href="https://github.com/DaniJounblat1">
                                         <img
                                             src="/img/svg/github.svg"
                                             alt="github"
                                         />
                                     </a>
 
-                                    <a href="https://www.linkedin.com/in/adeoladev/">
+                                    <a href="https://www.linkedin.com/in/dani-jounblat-b80075301">
                                         <img
                                             src="/img/svg/linkedin.svg"
                                             alt="linkedin"
                                         />
                                     </a>
-                                    <a href="https://www.instagram.com/adeolaadeoti_/">
+                                    <a href="https://www.instagram.com/dani.jounblat?igsh=OXBvbjI5N2w5YTly">
                                         <img
                                             src="/img/svg/instagram.svg"
                                             alt="instagram"
@@ -105,7 +105,7 @@ const Header = () => {
                             </div>
                             <a
                                 className="resume"
-                                href="/img/adeola-resume.pdf"
+                                href="/img/danijounblat.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -116,8 +116,13 @@ const Header = () => {
                             <h4 className="heading-4">navigation</h4>
                             <ul className="list">
                                 <li className="list__item">
-                                    <Link href="#home" passHref legacyBehavior>
+                                    <Link href="#" passHref legacyBehavior>
                                         <a className="list__link">Home</a>
+                                    </Link>
+                                </li>
+                                <li className="list__item">
+                                    <Link href="#about" passHref legacyBehavior>
+                                        <a className="list__link">About</a>
                                     </Link>
                                 </li>
                                 <li className="list__item">
@@ -148,8 +153,11 @@ const Header = () => {
                             media="(max-width:37.5em)"
                             srcSet="/img/name.png"
                         />
-                        <img src="/img/name.png" alt="my logo"
-                        className="logo" />
+                        <img
+                            src="/img/name.png"
+                            alt="my logo"
+                            className="logo"
+                        />
                     </picture>
                 </nav>
             </div>

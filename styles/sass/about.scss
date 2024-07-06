@@ -3,17 +3,13 @@
 
     padding: 20px;
 
-    
-
     .pTitle {
-        color: $white;
         font-size: 3rem;
         font-weight: bold;
         letter-spacing: 2px;
     }
 
     .paragraph {
-        color: white;
         font-size: 2rem;
         font-weight: bold;
         letter-spacing: 1px;
@@ -25,15 +21,14 @@
         margin-bottom: 20px;
     }
     .languages p {
-        color: #fff;
         padding: 8px;
         border-radius: 5px;
         font-size: 2rem;
+        font-weight: bold;
     }
 
     .column {
         p {
-            color: $white;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 10px;
@@ -61,6 +56,7 @@
 
     span {
         color: $purple;
+        letter-spacing: 2px;
     }
 
     .cv {

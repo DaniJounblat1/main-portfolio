@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Projects = () => {
     return (
-        <section className="projects">
+        <section className="projects" id="projects">
             <h1 className="mainTitle">Projects</h1>
             <div className="project">
                 <img src="/img/portfolio.jpg" alt="Portfolio Space Theme" />

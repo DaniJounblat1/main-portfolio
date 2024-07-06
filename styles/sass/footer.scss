@@ -1,0 +1,39 @@
+.footer {
+    color: $grey;
+    padding: 0 1rem 0 1rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer-name {
+            font-size: 2rem;
+            font-weight: bold;
+
+            span {
+                color: $purple;
+            }
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1.4rem;
+
+            a {
+                color: white;
+                font-size: 3rem;
+
+                &:hover {
+                    color: #6d84b4;
+                }
+            }
+        }
+    }
+}
