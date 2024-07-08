@@ -1,4 +1,5 @@
 .contact-page {
+  
     h1 {
         font-size: 2em;
         margin-bottom: 20px;
@@ -14,10 +15,10 @@
         font-size: 1.6rem !important;
         font-weight: bold;
     }
-
+    
     .form-group {
         margin-bottom: 15px;
-
+       
         label {
             display: block;
             margin-bottom: 5px;
@@ -82,3 +83,7 @@
         }
     }
 }
+@media only screen and (min-width: 600px) {
+    .form-group,.send-button {
+        margin-left: 6rem;}
+  }

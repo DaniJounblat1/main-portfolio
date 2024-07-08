@@ -47,16 +47,21 @@ const Header = () => {
 
     return (
         <section className="header_page">
-            <h5 className="heading">HI THERE👋, I’M</h5>
+            <img
+                        className="bg"
+                        src="/img/svg/home-bg.svg"
+                        alt="background"
+                    />
+            <h5 className="heading">HI THERE👋, I’M</h5> 
             <div className="text-con">
-                <div className="name">Dani Jounblat</div>
+                <div className="name">Dani Jounblat</div> 
             </div>
-            <h3 className="developer"> WEB DEVELOPER + DESIGNER 🧑‍💻</h3>
+            <h3 className="developer"> WEB DEVELOPER + DESIGNER 👨‍💻</h3>
             <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧 </h6>
             <Link href="#contact" passHref legacyBehavior>
-                <a>
+              
                     <button className="hire-me-button">HIRE ME</button>
-                </a>
+                
             </Link>
 
             <div className="nav-container">

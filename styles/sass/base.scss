@@ -65,12 +65,18 @@ $animation-iteration-count: infinite;
     scroll-behavior: smooth;
 }
 html {
-    font-size: 62.5%;
+    font-size: 70%;
 }
 @media only screen and (max-width: 37.5em) {
     html {
         font-size: 51%;
     }
+}
+@media only screen and (min-width: 700px) {
+
+.mainTitle{
+    font-size: 4rem !important;  
+} 
 }
 
 body {
