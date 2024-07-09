@@ -1,10 +1,12 @@
 // pages/_app.js
 import "../styles/sass/main.scss";
+import { Analytics } from "@vercel/analytics/react"
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
             <Component {...pageProps} />
+            <Analytics />
         </>
     );
 }

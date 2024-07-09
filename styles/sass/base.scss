@@ -21,22 +21,23 @@ $green: #09f755;
 $grey: #797575;
 $purple: #682ae9;
 
-
 // styles/variables.scss
 
 $gradient-background: linear-gradient(
     270deg,
+    white,
+    white,
+    white,
     indigo,
     red,
     #682ae9,
-    yellow,
     purple,
     blue,
     violet
 );
 $background-size: 400% 400%;
 $animation-name: colorChange;
-$animation-duration: 6s;
+$animation-duration: 10s;
 $animation-timing-function: ease;
 $animation-iteration-count: infinite;
 
@@ -73,16 +74,15 @@ html {
     }
 }
 @media only screen and (min-width: 700px) {
-
-.mainTitle{
-    font-size: 4rem !important;  
-} 
+    .mainTitle {
+        font-size: 4rem !important;
+    }
 }
 
 body {
     line-height: 1.6;
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffffff;
     margin: 0;
     padding: 0;
     font-family: $primary-font;
