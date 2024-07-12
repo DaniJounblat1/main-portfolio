@@ -19,15 +19,20 @@ $primary-font: "Calibre-Regular", sans-serif;
 //colors
 $green: #09f755;
 $grey: #797575;
-$purple: #682ae9;
+// styles/sass/main.scss
+:root {
+    --main: #682ae9; // Default color
+}
+
+// Replace other instances of var(--main) with the CSS variable where needed
 
 // styles/variables.scss
 
 $gradient-background: linear-gradient(
     270deg,
-    white,
-    white,
-    white,
+    var(--text-color),
+    var(--text-color),
+    var(--text-color),
     indigo,
     red,
     #682ae9,
@@ -65,24 +70,21 @@ $animation-iteration-count: infinite;
 * {
     scroll-behavior: smooth;
 }
-html {
-    font-size: 70%;
+
+:root {
+    --bg-color: #f2f2f2f2;
+    --text-color: #000000;
 }
-@media only screen and (max-width: 37.5em) {
-    html {
-        font-size: 51%;
-    }
-}
-@media only screen and (min-width: 700px) {
-    .mainTitle {
-        font-size: 4rem !important;
-    }
+
+[data-theme="dark"] {
+    --bg-color: #000000;
+    --text-color: #ffffff;
 }
 
 body {
     line-height: 1.6;
-    background-color: #000000;
-    color: #ffffffff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     font-family: $primary-font;
@@ -98,7 +100,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: white;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -114,4 +116,34 @@ section {
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
+    color: var(--text-color);
+}
+// styles/sass/main.scss
+
+// Base styles for the hidden state
+.component {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition:
+        opacity 1.5s ease-out,
+        transform 1.5s ease-out;
+}
+
+// Styles when the component is in view
+.component-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+html {
+    font-size: 70%;
+}
+@media only screen and (max-width: 37.5em) {
+    html {
+        font-size: 51%;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .mainTitle {
+        font-size: 4rem !important;
+    }
 }

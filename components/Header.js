@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
 
 const Header = () => {
+    
+
     useEffect(() => {
         const tl = gsap.timeline({ paused: true, reversed: true });
         tl.to(".box", {
@@ -45,23 +47,19 @@ const Header = () => {
         });
     }, []);
 
+    
+
     return (
         <section className="header_page">
-            <img
-                        className="bg"
-                        src="/img/svg/home-bg.svg"
-                        alt="background"
-                    />
-            <h5 className="heading">HI THERE👋, I’M</h5> 
+            <img className="bg" src="/img/svg/home-bg.svg" alt="background" />
+            <h5 className="heading">HI THERE👋, I’M</h5>
             <div className="text-con">
-                <div className="name">Dani Jounblat</div> 
+                <div className="name">Dani Jounblat</div>
             </div>
-            <h3 className="developer"> WEB DEVELOPER + DESIGNER 👨‍💻</h3>
-            <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧 </h6>
+            <h3 className="developer">WEB DEVELOPER + DESIGNER 👨‍💻</h3>
+            <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧</h6>
             <Link href="#contact" passHref legacyBehavior>
-              
-                    <button className="hire-me-button">HIRE ME</button>
-                
+                <button className="hire-me-button">HIRE ME</button>
             </Link>
 
             <div className="nav-container">
@@ -80,7 +78,7 @@ const Header = () => {
                     <img
                         className="mobile-logo"
                         src="/img/name.png"
-                        alt="adeola logo mobile"
+                        alt="dani logo mobile"
                     />
                     <div className="nav-main__content">
                         <div className="nav-main__content--box">
@@ -165,6 +163,7 @@ const Header = () => {
                         />
                     </picture>
                 </nav>
+                
             </div>
         </section>
     );

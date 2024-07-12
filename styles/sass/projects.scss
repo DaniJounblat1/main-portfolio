@@ -15,7 +15,7 @@
         position: relative;
 
         text-align: center;
-        border: 2px solid $purple;
+        border: 2px solid var(--main);
         border-radius: 10px;
         overflow: hidden;
         transition:
@@ -24,7 +24,7 @@
 
         &:hover {
             transform: scale(1.03);
-            box-shadow: 0 0 20px $purple;
+            box-shadow: 0 0 20px var(--main);
         }
 
         img {
@@ -49,6 +49,7 @@
 
             .github-link,
             .demo-link {
+                color: var(--text-color);
                 text-decoration: none;
                 padding: 0.5rem 1rem;
                 border-radius: 5px;
@@ -72,6 +73,5 @@
 @media only screen and (min-width: 600px) {
     .project {
         width: 60% !important;
-    
     }
-  }
+}

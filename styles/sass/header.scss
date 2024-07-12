@@ -22,7 +22,7 @@
         letter-spacing: 2px;
     }
     .developer {
-        color: $purple;
+        color: var(--main);
         font-size: 1.6rem;
         font-weight: bold;
     }
@@ -35,7 +35,7 @@
     }
 
     .hire-me-button {
-        background-color: $purple;
+        background-color: var(--main);
         border: none;
         color: black;
         padding: 10px 30px;
@@ -103,7 +103,7 @@
             z-index: 1;
             display: flex;
             .box {
-                background-color: $purple;
+                background-color: var(--main);
                 width: calc(100vw / 4);
                 height: 0vh;
             }
@@ -236,6 +236,10 @@
 .bg {
     display: none;
 }
+
+
+//light dark
+
 @media only screen and (min-width: 600px) {
     .header_page {
         margin-left: 6rem;

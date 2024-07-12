@@ -47,19 +47,19 @@
     .fa-download,
     .fa-brands,
     .fa-solid {
-        color: $purple;
+        color: var(--main);
         margin-right: 8px;
         font-size: 2.2rem;
         padding-bottom: 8px;
     }
 
     span {
-        color: $purple;
+        color: var(--main);
         letter-spacing: 2px;
     }
 
     .cv {
-        background-color: $purple;
+        background-color: var(--main);
         border: none;
         color: black;
         padding: 6px 10px;

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faDownload,
@@ -17,16 +16,23 @@ import {
     faNpm,
     faAndroid
 } from "@fortawesome/free-brands-svg-icons";
+import useIntersectionObserver from "./effect";
 
 const About = () => {
-    return (
-        <div className="about-page" id="about">
-            <h1 className="mainTitle">ABOUT ME</h1>
+    const [ref, isVisible] = useIntersectionObserver();
 
+    return (
+        <div
+            ref={ref}
+            className={`about-page component ${
+                isVisible ? "component-visible" : ""
+            }`}
+            id="about"
+        >
+            <h1 className="mainTitle">ABOUT ME</h1>
             <a href="./Danijounblat.pdf" download className="cv">
                 CV <FontAwesomeIcon className="download" icon={faDownload} />
             </a>
-
             <p className="paragraph">
                 MIS graduate with a passion for web development Front-end &
                 Back-end.
@@ -94,7 +100,6 @@ const About = () => {
                     </p>
                 </div>
             </div>
-
             <p className="pTitle">Languages :</p>
             <div className="languages">
                 <p>
@@ -107,9 +112,6 @@ const About = () => {
                     French <span>Elementary</span>
                 </p>
             </div>
-          
-               
-           
         </div>
     );
 };
