@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faGithub,
-    faLinkedin,
-    faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark"); // Default to dark mode
     const [color, setColor] = useState("#682ae9");
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem("theme") || "light";
+        const savedTheme = localStorage.getItem("theme") || "dark"; // Default to dark mode
         setTheme(savedTheme);
         document.documentElement.setAttribute("data-theme", savedTheme);
     }, []);
