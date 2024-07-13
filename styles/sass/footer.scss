@@ -1,5 +1,4 @@
 .footer {
-    color: $grey;
     padding: 0 1rem 0 1rem;
     text-align: center;
     letter-spacing: -0.5px;
@@ -48,6 +47,10 @@
 
                 &:hover {
                     color: #6d84b4;
+                }
+
+                .github {
+                    fill: red;
                 }
             }
         }

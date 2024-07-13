@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faDownload,
     faDatabase,
-    faCode,
-    faTerminal
 } from "@fortawesome/free-solid-svg-icons";
 import {
     faHtml5,
@@ -14,7 +12,6 @@ import {
     faGit,
     faGithub,
     faNpm,
-    faAndroid
 } from "@fortawesome/free-brands-svg-icons";
 import useIntersectionObserver from "./effect";
 

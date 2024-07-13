@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     const [theme, setTheme] = useState("dark"); // Default to dark mode
@@ -37,21 +35,22 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faGithub} />
+                        <img src="/img/svg/github-web.svg" alt="GitHub"
+                        className="github-icon"/>
                     </a>
                     <a
                         href="https://www.linkedin.com/in/dani-jounblat-b80075301"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <img src="/img/svg/linkedin.svg" alt="LinkedIn" />
                     </a>
                     <a
                         href="https://www.instagram.com/dani.jounblat?igsh=OXBvbjI5N2w5YTly"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faInstagram} />
+                        <img src="/img/svg/instagram.svg" alt="Instagram" />
                     </a>
 
                     <button
