@@ -35,8 +35,11 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img src="/img/svg/github-web.svg" alt="GitHub"
-                        className="github-icon"/>
+                        <img
+                            src="/img/svg/github-web.svg"
+                            alt="GitHub"
+                            className="github-icon"
+                        />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/dani-jounblat-b80075301"
