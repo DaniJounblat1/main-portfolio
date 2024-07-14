@@ -35,15 +35,17 @@ $gradient-background: linear-gradient(
     var(--text-color),
     indigo,
     red,
+    #09f755,
     #682ae9,
     purple,
+    
     blue,
     violet
 );
 $background-size: 400% 400%;
 $animation-name: colorChange;
-$animation-duration: 10s;
-$animation-timing-function: ease;
+$animation-duration: 7s;
+$animation-timing-function: ease-out;
 $animation-iteration-count: infinite;
 
 @mixin gradient-text {

@@ -56,7 +56,7 @@ const Header = () => {
             <div className="text-con">
                 <div className="name">Dani Jounblat</div>
             </div>
-            <h3 className="developer">WEB DEVELOPER + DESIGNER 👨‍💻</h3>
+            <h3 className="developer"> DEVELOPER + DESIGNER 👨‍💻</h3>
             <h6 className="about-text">Based In Beirut, Lebanon 🇱🇧</h6>
             <Link href="#contact" passHref legacyBehavior>
                 <button className="hire-me-button">HIRE ME</button>

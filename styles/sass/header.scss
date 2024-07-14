@@ -1,52 +1,58 @@
 .header_page {
-    margin-top: 30vh;
+    margin-top: 25vh;
     .name {
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: bold;
         margin-top: 1rem;
+        letter-spacing: 1px;
         @include gradient-text;
     }
     .logo,
     .mobile-logo {
         position: absolute;
-        left: 4rem;
-        top: 5.4rem;
+        left: 2rem;
+        top: 4rem;
         width: 6rem;
     }
     .mobile-logo {
-        top: 6rem !important;
+        top: 5rem !important;
+        left: 3rem !important;
     }
     .heading {
         font-size: 1.5rem;
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
     .developer {
         color: var(--main);
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-weight: bold;
+        letter-spacing: 3px;
     }
 
     .about-text {
         color: silver;
-        margin-top: 1.2rem;
-        font-size: 1.5rem;
+        margin-top: 1.8rem;
+        font-size: 1.3rem;
         font-weight: bold;
+        letter-spacing: 2px;
     }
 
     .hire-me-button {
         background-color: var(--main);
         border: none;
         color: black;
-        padding: 10px 30px;
+        padding: 12px 35px;
         text-align: center;
         display: inline-block;
         cursor: pointer;
         border-radius: 50px;
         font-size: 10px;
+        letter-spacing: 2px;
         font-weight: bold;
         transition: background-color 0.3s;
-        margin-top: 1.2rem;
+        margin-top: 1.8rem;
+        
     }
 
     .hire-me-button:hover {
@@ -62,8 +68,8 @@
     .nav-icon {
         background-color: #000;
         position: absolute;
-        right: 4rem;
-        top: 4rem;
+        right: 3rem;
+        top: 3rem;
         z-index: 10;
         width: 6rem;
         height: 6rem;
@@ -109,9 +115,6 @@
             }
         }
         .mobile-logo {
-            position: absolute;
-            top: 5.4rem;
-            left: 4rem;
             z-index: 2;
             filter: brightness(1%);
             opacity: 0;
