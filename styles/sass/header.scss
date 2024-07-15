@@ -1,10 +1,11 @@
 .header_page {
     margin-top: 25vh;
     .name {
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: bold;
         margin-top: 1rem;
-        letter-spacing: 1px;
+        letter-spacing: -2px;
+        font-style: oblique 40deg;
         @include gradient-text;
     }
     .logo,
