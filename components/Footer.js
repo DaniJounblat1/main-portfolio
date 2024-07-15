@@ -49,7 +49,7 @@ const Footer = () => {
                         <img src="/img/svg/linkedin.svg" alt="LinkedIn" />
                     </a>
                     <a
-                        href="https://www.instagram.com/dani.jounblat?igsh=OXBvbjI5N2w5YTly"
+                        href="https://www.instagram.com/bonmobp?igsh=MWlkczZhejEwdzBteg=="
                         target="_blank"
                         rel="noopener noreferrer"
                     >

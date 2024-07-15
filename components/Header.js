@@ -98,7 +98,8 @@ const Header = () => {
                                             alt="linkedin"
                                         />
                                     </a>
-                                    <a href="https://www.instagram.com/dani.jounblat?igsh=OXBvbjI5N2w5YTly">
+                                    <a
+                                    href="https://www.instagram.com/bonmobp?igsh=MWlkczZhejEwdzBteg==">
                                         <img
                                             src="/img/svg/instagram.svg"
                                             alt="instagram"
