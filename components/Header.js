@@ -3,8 +3,6 @@ import Link from "next/link";
 import { gsap } from "gsap";
 
 const Header = () => {
-    
-
     useEffect(() => {
         const tl = gsap.timeline({ paused: true, reversed: true });
         tl.to(".box", {
@@ -46,8 +44,6 @@ const Header = () => {
             });
         });
     }, []);
-
-    
 
     return (
         <section className="header_page">
@@ -98,8 +94,7 @@ const Header = () => {
                                             alt="linkedin"
                                         />
                                     </a>
-                                    <a
-                                    href="https://www.instagram.com/bonmobp?igsh=MWlkczZhejEwdzBteg==">
+                                    <a href="https://www.instagram.com/bonmobp?igsh=MWlkczZhejEwdzBteg==">
                                         <img
                                             src="/img/svg/instagram.svg"
                                             alt="instagram"
@@ -109,7 +104,7 @@ const Header = () => {
                             </div>
                             <a
                                 className="resume"
-                                href="/img/danijounblat.pdf"
+                                href="/img/Danijounblat.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -164,7 +159,6 @@ const Header = () => {
                         />
                     </picture>
                 </nav>
-                
             </div>
         </section>
     );

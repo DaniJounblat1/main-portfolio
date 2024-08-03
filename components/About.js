@@ -1,9 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faDownload,
-    faDatabase,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
     faHtml5,
     faCss3Alt,
@@ -11,7 +8,7 @@ import {
     faPhp,
     faGit,
     faGithub,
-    faNpm,
+    faNpm
 } from "@fortawesome/free-brands-svg-icons";
 import useIntersectionObserver from "./effect";
 
