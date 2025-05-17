@@ -48,9 +48,9 @@ const Projects = () => {
             </div>
 
             <div className="project">
-                <img src="/img/daneline.jpg" alt="Danéline L'immortalité Flowers Store" />
+                <img src="/img/daneline.jpg" alt="Danéline L&apos;immortalité Flowers Store" />
                 <div className="details">
-                    <h2>Danéline L'immortalité Flowers Store</h2>
+                    <h2>Danéline L&apos;immortalité Flowers Store</h2>
                     <a href="https://danelineflowers.art/" target="_blank" rel="noopener noreferrer" className="demo-link">
                         <FontAwesomeIcon icon={faExternalLinkAlt} />
                     </a>
